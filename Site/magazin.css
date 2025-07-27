@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --main-bg: #333;
+    --main-color: #fff;
+    --accent: #FFD700;
+    --body-bg: white;
+    --body-color: #000000;
+    --pd-x: clamp(1rem,-1.059rem + 7.843vw,6rem)
+}
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background-color: var(--body-bg);
+}
+li, a { text-decoration: none; list-style: none;}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: rgb(242, 197, 61);
+    box-shadow: 0 10px 20px rgba(53, 53, 53, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 900;
+}
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-container .navbar-menu
+{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.navbar-container .navbar-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+.navbar-container .navbar-menu li a:hover {
+    color: #162530;
+    background: rgba(188, 212, 229, 0.8);
+    border: 2px solid #fff;
+}
+/* Responsive Styles */
+@media (max-width: 880px) {
+    .navbar {
+    backdrop-filter: none;}
+
+    .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    }
+    .navbar-container .navbar-menu.active {
+        display:  flex;
+    }    
+    .navbar-toggle {
+        display: block;
+        z-index: 901;
+    }
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+        .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+        .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
