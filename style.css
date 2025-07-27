@@ -224,7 +224,9 @@ li, a { text-decoration: none; list-style: none;}
     align-items: stretch;
 }
 .card-img {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 /* Style Butoane */
 button {
