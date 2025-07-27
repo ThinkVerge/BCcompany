@@ -223,7 +223,7 @@ li, a { text-decoration: none; list-style: none;}
     display: flex;
     align-items: stretch;
 }
-.card-img {
+.card-switch {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
