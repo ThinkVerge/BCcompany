@@ -223,6 +223,9 @@ li, a { text-decoration: none; list-style: none;}
     display: flex;
     align-items: stretch;
 }
+.card-img {
+    
+}
 /* Style Butoane */
 button {
     margin-left: 20px;
