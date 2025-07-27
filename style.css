@@ -230,6 +230,15 @@ li, a { text-decoration: none; list-style: none;}
     align-items: center;
     overflow: hidden;
 }
+.card-switch:hover {
+    rotate: 2deg;
+    scale: 1.05
+}
+
+.card-switch:active {
+    rotate: -2deg;
+    scale: .95
+}
 /* Style Butoane */
 button {
     margin-left: 20px;
