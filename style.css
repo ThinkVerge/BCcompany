@@ -227,6 +227,7 @@ li, a { text-decoration: none; list-style: none;}
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    overflow: hidden;
 }
 /* Style Butoane */
 button {
