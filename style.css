@@ -226,7 +226,7 @@ li, a { text-decoration: none; list-style: none;}
 .card-switch {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
 }
 /* Style Butoane */
